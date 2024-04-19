@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    body{ 
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+        h1 { margin-top: 0px;}
+      }
+      .calculator-container {
+    border: 2px solid #000;
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the calculator on the page */
+    background-color: rgb(55, 127, 190);
+  }
+  .calculator-button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  </style>
+</head>
+<body>  <div class="calculator-container">
+
+    <h1> Console Calculator </h1>
+   
+  <p>
+    <button class="calculator-button" onclick = " calculation += 0; console.log(`total :${calculation } `);">0</button>
+    <button class="calculator-button" onclick = " calculation += 1; console.log(`total :${calculation } `);">1</button>
+    <button class="calculator-button" onclick="  calculation += 2; console.log(`total :${calculation } `);">2</button>
+ 
+   
+    <button class="calculator-button" onclick = " calculation += 1; console.log(`total :${calculation } `);">+</button>
+   
+  </p>
+  <p>
+    <button class="calculator-button" onclick="  calculation += 3; console.log(`total :${calculation } `);">3</button>
+    <button class="calculator-button" onclick = " calculation += 4; console.log(`total :${calculation } `);">4</button>
+    <button class="calculator-button" onclick = " calculation += 5; console.log(`total :${calculation } `);">5</button>
+   
+   
+    <button class="calculator-button" onclick = " calculation -= 1; console.log(`total :${calculation } `);">-</button>
+   
+  </p>
+  <p>
+    <button class="calculator-button" onclick="  calculation += 6; console.log(`total :${calculation } `);">6</button>
+    <button class="calculator-button" onclick="  calculation += 7; console.log(`total :${calculation } `);">7</button>
+    <button class="calculator-button" onclick = " calculation += 8; console.log(`total :${calculation } `);">8</button>
+   
+    <button class="calculator-button" onclick = " calculation *= 1; console.log(`total :${calculation } `);">*</button>
+  </p>
+  <p>
+    <button class="calculator-button" onclick="  calculation += 9; console.log(`total :${calculation } `);">9</button>
+    <button class="calculator-button" onclick = " eval(calculation); console.log(`Eval:${calculation } `);">=</button>
+    <button class="calculator-button" onclick = " calculation %= 0; console.log(`total :${calculation } `);">%</button>
+    <button class="calculator-button" onclick = "  console.log(`total :${calculation} `);">.</button>
+  </p>
+</div>
+  <script>
+      let calculation = 0;
+      console.log(calculation);
+
+
+  </script>
+</body>
+</html>
