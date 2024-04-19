@@ -6,8 +6,11 @@
   <title>Booleans and If statements</title>
 </head>
 <body>
+  
   <h1>Booleans</h1>
+  <p> please check in the console </p>
   <script>
+    /*
     true
     false
     console.log(3<2);
@@ -22,6 +25,48 @@
     cnsole.log (true || false ) ; // Atleast one should be true
     console.log ( !true ) // Not operator , it will flip in to false , result is here False 
     console.log (!false ) //  result is true
+*/
+    // Truthy and falsy value 
+/*
+    if(5){
+      console.log('Truthy'); // result is Truthy
+      // falsy values : false, 0, '', NaN, undefined, null
+    }
+    const cartQuantity = 5;
+    if (cartQuantity){
+
+      console.log('cart has products');
+    }
+    console.log(!0);
+    console.log('text'/5); // Nan
+    let variable4;
+    console.log (variable4); // undefined
+*/
+
+    // Terinary operator 
+
+    true ? 'trythy' : 'falsy'
+  // condition ? 'ture ': 'false'
+
+  const result = true ? 'trythy' : 'falsy'
+  console.log(result);
+  const result1 = 0 ? 'trythy' : 'falsy'
+  console.log(result1); // 0 is falsy 
+
+// Guard operator &&
+    false && console.log('hello');
+    const message = false && 'hello';
+    console.log(message);
+    const message1 = 5 && 'hello';
+    console.log(message1);
+
+// Default operator ||
+
+    const currency = 'EUR' || 'USD';
+    console.log(currency);
+    const currency1= undefined || 'USD';
+    console.log(currency1);
+
   </script>
 </body>
 </html>
