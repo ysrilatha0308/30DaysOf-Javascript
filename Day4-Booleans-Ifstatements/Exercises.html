@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example of Boolens and If statements</title>
+</head>
+<body>
+  <h1>Exercises - Booleans and If-statements</h1>
+
+  <script>
+// &&  operators
+    const hour = 9;
+    const name = 'Srilatha'
+    if (hour >=6 && hour <= 12 ){
+     console.log(`Good morning ${name}!`);
+    }
+    else if (hour >=13 && hour <= 17 ){
+     console.log(`Good afternoon ${name}`);
+    }
+    else {
+      console.log(`Good night ${name}`);
+    }
+// || operatoe 
+    const age = 60;
+    if( age <= 6 || age >= 65){
+        console.log('You get discount');
+    }
+    else {
+      console.log('you will not get discount');
+    }
+    const age1 = 70;
+    if( age1 <= 6 || age1 >= 65){
+        console.log('You get discount');
+    }
+    else {
+      console.log('you will not get discount');
+    }
+// both && and || operator 
+
+  const isHoliday = true ;
+  const age2 = 6;
+    if( (age2 <= 6 || age2 >= 65) && isHoliday ){
+        console.log('You get discount because it is holiday');
+    }
+    else {
+      console.log('you will not get discount because there is no holiday');}
+      if( (age2 <= 6 || age2 >= 65) && !isHoliday ){
+        console.log('You get discount because it is holiday');
+    }
+    else {
+      console.log('you will not get discount because there is no holiday');}
+  
+  </script>
+</body>
+</html>
