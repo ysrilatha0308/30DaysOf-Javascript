@@ -25,3 +25,8 @@ button{
 button:hover{
   background-color: brown;
 }
+img{
+  padding-top: 10px;
+  width: 650px;
+  height: 150px;
+}
