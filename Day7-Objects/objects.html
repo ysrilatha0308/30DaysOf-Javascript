@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+
+<body>
+<h1> Objects </h1>  
+<p>Check in console</p>
+<script>
+/*   const product = {
+    name : 'Srilatha',
+    age : 34
+  };
+  console.log(product);
+  console.log(product.name);
+  product.name = 'Ravii'
+  console.log(product.name);
+  product.newProperty = true;
+  console.log(product);
+  delete product.newProperty;
+  console.log(product);
+  delete product.name;
+  console.log(product);
+ */
+const product1 = {
+  name : 'Socks',
+  cost : 300,
+  rating :{
+    stars : 4.5,
+    count : 76
+  }, // Function inside an object is called METHOD 
+  // type of Console is object and type of log is object
+  fun : function function1(){
+    console.log( "function inside an object");
+  }
+}
+// object + function = method
+console.log (product1.name) ; // Dot notation
+console.log (product1 ['name']); // Braket notation - we can use this when dot notation is not working 
+// console.log (product1. cost); - this gives error
+console.log (product1 ['cost']); // now it shows undefined
+
+product1.fun();
+console.log (product1.rating.count);
+
+</script>
+
+</body>
+</html>
